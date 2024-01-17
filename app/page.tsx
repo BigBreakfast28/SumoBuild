@@ -1,13 +1,15 @@
 import Navbar from "@/components/navbar";
+import Image from "next/image";
+import homeImg from "@/public/cyber.jpg"
 
-const homePage = () => {
-  return(
-    <div>
-      Home Page for Sumo Build
-      <Navbar/>
+export default function Home() {
+    return<div>
+        Sumo Home
+            <Navbar/>
+            <Image
+                src={homeImg}
+                alt="Cyber Image with binary code"
+                
+            />
     </div>
-    
-  );
 }
-
-export default homePage;
