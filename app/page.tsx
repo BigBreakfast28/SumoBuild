@@ -9,7 +9,8 @@ export default function Home() {
             <Image
                 src={homeImg}
                 alt="Cyber Image with binary code"
-                
+                fill
+                style={{objectFit: 'cover'}}
             />
     </div>
 }
