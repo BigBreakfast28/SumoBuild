@@ -1,16 +1,13 @@
-import Navbar from "@/components/navbar";
-import Image from "next/image";
+import Hero from "@/components/hero";
 import homeImg from "@/public/cyber.jpg"
 
+
 export default function Home() {
-    return<div>
-        Sumo Home
-            <Navbar/>
-            <Image
-                src={homeImg}
-                alt="Cyber Image with binary code"
-                fill
-                style={{objectFit: 'cover'}}
-            />
-    </div>
+    return (
+        <Hero
+            imgData={homeImg}
+            imgAlt="Binary Code"
+            title="Start your Journey Here"
+        />
+    );
 }
