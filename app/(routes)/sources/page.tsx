@@ -1,7 +1,7 @@
 import Hero from "@/components/hero"
 import staticImg from "@/public/brainstorm.jpg"
 
-export default function Static() {
+export default function sources() {
     return (
         <Hero
             imgData={staticImg}
@@ -10,3 +10,4 @@ export default function Static() {
         />
     )
 }
+

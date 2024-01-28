@@ -5,6 +5,7 @@ interface HeroProps {
     imgData: StaticImageData;
     imgAlt: string;
     title: string;
+    text: string;
 }
 
 export default function Hero(props: HeroProps ) {
@@ -20,9 +21,14 @@ export default function Hero(props: HeroProps ) {
             </div>
             <div className="absolute inset-0 bg-gradient-to-r from-slate-900"/>
             <div className="pt-48 flex justify-center items-center">
-                <h1 className="text-white text-6xl">
+                <h1 className="text-white text-6xl ">
                     {props.title}
                 </h1>
+                <span className="block">
+                <h3 className="text-white block">
+                    {props.text}
+                </h3>
+                </span>
             </div>
         </div>
         
